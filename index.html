@@ -8,62 +8,89 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
+      background: #f2f2f2;
+      margin: 0;
       padding: 20px;
       text-align: center;
-    }
-
-    h1 {
-      color: #1a73e8;
-    }
-
-    img {
-      width: 250px;
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 15px 0;
+      color: #333;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
+      max-width: 420px;
       margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    a.boton {
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* GALERÍA TIPO INSTAGRAM */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+
+    .btn-whatsapp {
       display: inline-block;
-      background: #25d366;
+      background: #25D366;
       color: white;
-      padding: 15px 20px;
-      border-radius: 8px;
       text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 30px;
       font-size: 18px;
-      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
     }
   </style>
 </head>
+
 <body>
 
   <div class="card">
     <h1>Vendo páginas web</h1>
 
     <p>
-      Hago páginas web simples para negocios, emprendimientos y vendedores.
+      Hago páginas web simples para negocios, emprendedores y vendedores.
       Ideales para WhatsApp e Instagram.
     </p>
 
-    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Celulares">
+    <div class="galeria">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Ejemplo 1">
+      <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48" alt="Ejemplo 2">
+      <img src="https://images.unsplash.com/photo-1510557880182-3c5b5c3f1d90" alt="Ejemplo 3">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="Ejemplo 4">
+    </div>
 
     <p>
       Mostrá tus productos, servicios y recibí consultas directo por WhatsApp.
     </p>
 
-    <a class="boton" href="https://wa.me/5491128296544">
-      📲 Consultar por WhatsApp
+    <a class="btn-whatsapp"
+       href="https://wa.me/5491128296544"
+       target="_blank">
+       📱 Consultar por WhatsApp
     </a>
   </div>
 
